@@ -3,7 +3,7 @@ import type { ITopic } from '@/types/topic'
 import HAccordion from './HAccordion.vue'
 import HBookTopics from '@/components/HBookTopics.vue'
 import HReportItem from './HReportItem.vue'
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 
 import HTopicContent from './HTopicContent.vue'
 
