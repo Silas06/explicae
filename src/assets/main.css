@@ -1,0 +1,81 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #6e04c0;
+  --color-pure: #a505f0;
+  --color-medium: #9205e0;
+  --color-light: #c04ff5;
+  --color-lightest: #eccbfc;
+  --color-low-pure: #212529;
+  --color-low-dark: #1a1e21;
+  --color-low-medium: #45494c;
+  --color-low-light: #9d9fa1;
+  --color-high-pure: #fbfbfb;
+  --color-high-dark: #b9b9ba;
+  --color-high-medium: #e7e7e8;
+  --color-high-light: #eff0f0;
+  --color-success-pure: #2f9e44;
+  --color-success-dark: #267e2c;
+  --color-success-medium: #59b259;
+  --color-success-light: #bdd8ac;
+  --color-info-pure: #3b5bdb;
+  --color-info-dark: #2f58af;
+  --color-info-medium: #6294e2;
+  --color-info-light: #89c1ea;
+  --color-warning-pure: #eda81f;
+  --color-warning-dark: #cd841b;
+  --color-warning-medium: #f0b43e;
+  --color-warning-light: #f7d99c;
+  --color-error-pure: #e03131;
+  --color-error-dark: #b32738;
+  --color-error-medium: #d12e34;
+  --color-error-light: #ed8383;
+
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+i {
+  pointer-events: none;
+}
+
+button:disabled {
+  @apply cursor-not-allowed opacity-50;
+}
+
+.v-popper__arrow-container {
+  display: none;
+}
+
+.v-popper--theme-dropdown .v-popper__inner {
+  border-radius: 0.25rem !important;
+}
+
+.v-popper--theme-tooltip .v-popper__inner {
+  overflow-x: hidden;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.33rem 0.66rem !important;
+  background: var(--color-gray-50) !important;
+  /* background: var(--color-gray-300) !important; */
+  font-weight: 500;
+  border-radius: 0.25rem !important;
+  /* opacity: .9; */
+  color: var(--color-primary) !important;
+  animation: 0.3s all ease-in-out;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0/0.1), 0 1px 2px -1px rgb(0 0 0/0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  -webkit-box-shadow:
+    var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow:
+    var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
